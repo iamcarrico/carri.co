@@ -15,17 +15,33 @@
     }
 
     header {
-      font-size: 10vh;
+      font-size: 11vh;
       display: block;
       text-align: center;
       margin-top: 36vh;
       border-bottom: 2vh solid #212121;
       padding-bottom: 10vh;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    header span {
+      font-size: 8vh;
+    }
+
+    @media (orientation: portrait) and (max-width: 768px) {
+      header {
+        font-size: 10vw;
+        padding-bottom: 10vw;
+        border-bottom: 3vw solid #212121;
+      }
+      header span {
+        font-size: 8vw;
+      }
     }
   </style>
 </head>
 <body>
-  <header>Ian J. Carrico</header>
+  <header>I<span>an</span> J. C<span>arrico</span></header>
 
   <script async src="https://www.google-analytics.com/analytics.js"></script>
   <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
